@@ -39,12 +39,21 @@ hr{
     display: inline;
     padding: 0rem 0.5rem;
 }
+
+ /* Navigation bar */
+
+
 .navigation{
     background-color: var(--primary-color);
     color: white;
     padding: 1rem; 
     border-bottom-left-radius: 1rem;
 }
+/* .list-non-bullet{
+    display: inline;
+    padding: 0rem 0.5rem;
+} */
+
 .navigation .nav-role{
     font-weight: bold;
 }
@@ -56,4 +65,7 @@ hr{
 }
 .navigation .link-active{
     font-weight: bold;
+}
+.hero{
+    padding: 2rem;
 }
