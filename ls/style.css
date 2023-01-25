@@ -2,12 +2,13 @@
 
 :root{
     --primary-color:#db2777;
-    --off-pink: #e7e7e7;
-    --light-pink: #44403c;
+    --off-pink:#e9f7f5;
+    --light-pink: #1c3549;
 }
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0px;
+    background: #f8f0f4;
 }
 hr{
     margin: 2rem 0rem;
@@ -20,6 +21,48 @@ hr{
     max-width: 600px;
     margin: auto;
 }
+/** anchor **/
+a{
+    cursor: pointer;
+}
+/* a:hover{
+    background-color: orange;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+a:hover::before {
+    content: "😎";
+    /* background-color: green; */
+}
+a:hover::after{
+    content: "😎";
+    
+    /* background-color: green; */
+}
+/* 
+a::before,
+a::after{
+    position: absolute;
+    height: 3px;
+    width: 0px;
+    background-color: orangered;
+    transition: .5s;
+
+}
+ a::after{
+    left: 0;
+    bottom:-10px;
+}
+a::before{
+    right: 0;
+    top: -10px;
+}
+a:hover::after,
+a:hover::before{
+    width: 100%;
+} */
+/** links **/
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -61,7 +104,7 @@ hr{
     padding: 0rem 0.5rem;
 } */
 
-.navigation .nav-role{
+.navigation .nav-brand{
     font-weight: bold;
 }
 .navigation .nav-pills{
@@ -73,6 +116,7 @@ hr{
 .navigation .link-active{
     font-weight: bold;
 }
+
 .hero{
     padding: 2rem;
 }
