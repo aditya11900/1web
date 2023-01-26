@@ -22,47 +22,24 @@ hr{
     margin: auto;
 }
 /** anchor **/
-a{
+.navigation a{
     cursor: pointer;
 }
-/* a:hover{
-    background-color: orange;
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} */
+ .navigation a:hover{
+width: 300px;
+} 
 
-a:hover::before {
+.navigation a:hover::before {
     content: "😎";
     /* background-color: green; */
 }
-a:hover::after{
-    content: "😎";
+.navigation a:hover::after{
+    content: "😎"; 
     
-    /* background-color: green; */
+    /* background-color: green;}
+     */
 }
-/* 
-a::before,
-a::after{
-    position: absolute;
-    height: 3px;
-    width: 0px;
-    background-color: orangered;
-    transition: .5s;
 
-}
- a::after{
-    left: 0;
-    bottom:-10px;
-}
-a::before{
-    right: 0;
-    top: -10px;
-}
-a:hover::after,
-a:hover::before{
-    width: 100%;
-} */
-/** links **/
 .link{
     text-decoration: none;
     padding: 0.5rem 1rem;
