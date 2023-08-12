@@ -55,6 +55,7 @@ width: 300px;
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
 }
+/** list **/
 .list-non-bullet{
     list-style: none;
 }
