@@ -30,11 +30,11 @@ width: 300px;
 } 
 
 .navigation a:hover::before {
-    content: "😎";
+    content: "";
     /* background-color: green; */
 }
 .navigation a:hover::after{
-    content: "😎"; 
+    content: ""; 
     
     /* background-color: green;}
      */
