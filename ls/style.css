@@ -24,21 +24,32 @@ hr{
 /** anchor **/
 .navigation a{
     cursor: pointer;
+    position: relative;
+    display: inline-block; /* Display links as blocks for sizing */
+    transition: transform 0.3s ease;
+    /* overflow: hidden; Hide the overflowing link text */
+}
+.navigation a::before,
+.navigation a::after {
+    content: "";
+    position: absolute; /* Position pseudo-elements relative to the link */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the link */
+    height: 100%; /* Full height of the link */
+    background-color: transparent; /* Initial background color */
+    transform: scale(1); /* Initial scale (no zoom) */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    z-index: -1; /* Position pseudo-elements below the link content */
+}
+.navigation a:hover::before,
+.navigation a:hover::after {
+    transform: scale(1.2); /* Apply zoom effect on hover */
 }
  .navigation a:hover{
 width: 300px;
+transform: scale(1.2);
 } 
-
-.navigation a:hover::before {
-    content: "";
-    /* background-color: green; */
-}
-.navigation a:hover::after{
-    content: ""; 
-    
-    /* background-color: green;}
-     */
-}
 
 .link{
     text-decoration: none;
@@ -135,11 +146,27 @@ padding: 2rem;
 }
 .footer .link{
     color: white;
+    font-weight: normal;
+    font-size: 16px;
 }
-.footer .footer-header{
+/* .footer .footer-header{
     font-weight: bold;
     font-size: large;
-}
+} */
 .footer ul{
     padding-inline-start: 0px;
+}
+.footer .link:hover {
+    font-weight: bold; /* Increase font weight on hover */
+    transform: scale(1.1); /* Apply zoom effect on hover */
+}
+.icon {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+    transition: transform 0.3s ease, font-weight 0.3s ease; /* Adding transition for both properties */
+}
+
+.icon:hover {
+    font-weight: bold; /* Increase font weight on hover */
+    transform: scale(1.1); /* Apply zoom effect on hover */
 }
